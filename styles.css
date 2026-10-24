@@ -1,0 +1,396 @@
+:root {
+    --primary-color-green: hsl(171, 66%, 44%);
+    --primary-color-blue: hsl(233, 100%, 69%);
+    --neutral-color-gray1: hsl(210, 10%, 33%);
+    --neutral-color-gray2: hsl(201, 11%, 66%);
+    --neutral-color-white: hsl(0, 0%, 100%);
+    --neutral-opacity-gray: hsla(201, 11%, 66%, 0.2);
+    --hover-primary-green: hsla(171, 66%, 44%, 0.8);
+    --hover-primary-blue: hsla(233, 100%, 69%, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+/* For the mobile S25/Iphone 17*/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Bai Jamjuree', Helvetica, sans-serif;
+}
+
+h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+h2 {
+        color: var(--neutral-color-gray1);
+        font-size: 1.7rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+ p {
+        color: var(--neutral-color-gray2);
+        line-height: 1.5;
+        text-align: center;
+    }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background: url(./images/bg-header-mobile.png) no-repeat;
+
+    img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.flex-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+button {
+    margin: 1rem;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+}
+
+.downloading {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+
+        a {
+            text-decoration: none;
+            margin: 1rem;
+            padding: 1rem 4rem;
+            border-radius: 30px;
+        }
+    
+        .ios-application {
+            border: none;
+            background-color: var(--primary-color-green);
+            color: var(--neutral-color-white);
+            box-shadow: 2px 1px 20px var(--primary-color-green);
+            cursor: pointer;
+            transition: all 0.1s;
+        }
+
+        .mac-application {
+            border: none;
+            background-color: var(--primary-color-blue);
+            color: var(--neutral-color-white);
+            box-shadow: 2px 1px 20px var(--primary-color-blue);
+            cursor: pointer;
+            transition: all 0.1s;
+        }
+}
+
+.ios-application:hover {
+    background-color: var(--hover-primary-green);
+}
+
+.mac-application:hover {
+    background-color: var(--hover-primary-blue);
+}
+
+.flex-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 2rem;
+    padding: 0.01rem;
+    gap: 3rem;
+
+    
+
+    img {
+        width: 250px;
+    }
+
+}
+
+.present-part2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.part2 {
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+        color: var(--neutral-color-gray1);
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+.part3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+
+    .para-part3 {
+        color: var(--neutral-color-gray2);
+        text-align: center;
+    }
+}
+
+.flex-presentation2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 2rem;
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    img {
+        width: 250px;
+    }
+}
+
+.flex-services {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+
+    img {
+        width: 50px;
+    }
+
+    .workflow {
+        margin-bottom: 3.5rem;
+    }
+
+    .blacklists, .plain, .preview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.flex-techcompanies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    img {
+        width: 180px;
+    }
+}
+
+.downloading-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+footer {
+    background-color: var(--neutral-opacity-gray);
+    margin-top: 3rem;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 70px;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    ul li {
+        margin-bottom: 1.5rem;
+        transition: all 0.1s;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: var(--neutral-color-gray1);
+    }
+}
+
+.infos ul li a:hover {
+    color: var(--primary-color-green);
+}
+
+.socials-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 90rem) {
+
+    header {
+        width: 100%;
+        background-image: url(./images/bg-header-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .downloading {
+        flex-direction: row;
+    }
+
+    .flex-presentation {
+         width: 100%;
+         margin: 1rem 5rem;
+    }
+
+    .present-part1 {
+        width: 50%;
+    }
+
+    .present-part2 {
+        flex-direction: row;
+
+        img {
+            width: 550px;
+            margin: 2rem;
+        }
+
+        .part3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 1rem 5rem;
+            
+            p {
+                text-align: left;
+                height: 40%;
+            }
+
+            span {
+                text-align: left;
+                width: 50%;
+            }
+        }
+    }
+
+    .flex-presentation2 {
+        width: 100%;
+
+        .clip-anywhere {
+            width: 50%;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            width: 500px;
+        }
+    }
+
+    .flex-services {
+        width: 100%;
+
+        .services {
+            display: flex;
+            justify-content: center;
+        }
+
+        .blacklists, .plain, .preview {
+            width: 30%;
+        }
+    }
+
+    .flex-techcompanies {
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .downloading-down{
+        width: 100%;
+
+        .download-intro {
+            width: 50%;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    footer {
+        height: 20vh;
+        flex-direction: row;
+
+        img {
+            float: left;
+            margin: auto 6rem;
+        }
+    }
+
+
+    .infos {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        ul {
+            width: 50%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center
+        }
+
+        ul li {
+            padding-right: 1rem;
+        }
+
+    }
+    
+}
