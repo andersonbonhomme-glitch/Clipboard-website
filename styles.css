@@ -366,7 +366,6 @@ footer {
         flex-direction: row;
 
         img {
-            float: left;
             margin: auto 6rem;
         }
     }
